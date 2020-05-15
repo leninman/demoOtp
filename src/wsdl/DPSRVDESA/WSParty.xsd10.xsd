@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.bod.com/IFX" elementFormDefault="qualified" targetNamespace="http://www.bod.com/IFX">
+
+	
+<include schemaLocation="WSParty.xsd3.xsd"/>
+
+	
+<complexType name="PartyAffiliateData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="OrgName" type="tns:OrgName"/>
+			
+<element maxOccurs="1" minOccurs="0" name="SocialAffiliatIdent" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="SocialOrgType" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PositionHeld" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="RelEstablishedDt" type="date"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyAuth">
+		
+<sequence>
+			
+<element maxOccurs="unbounded" minOccurs="1" name="SecToken" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyData">
+		
+<sequence>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="Contact" type="tns:Contact"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="IssuedIdent" type="tns:IssuedIdent"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyEnvr">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="CreatedDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreateRefIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientCreateDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientBusinessDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateRqUID" type="tns:UUID">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LoginName" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyKeys" type="tns:PartyKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CardKeys" type="tns:CardKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PassbkKeys" type="tns:PassbkKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="NetworkTrnData" type="tns:NetworkTrnData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ServerTerminalSeqNum" type="string">
+			</element>
+			
+<element maxOccurs="0" minOccurs="0" name="PointOfServiceData" type="tns:PointOfServiceData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientTerminalSeqNum" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyInfo">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyPref" type="tns:PartyPref"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="FinancialData" type="tns:FinancialData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="EstablishedDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ServiceLevel" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OriginatingBranch" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OriginatingBank" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PreferredBranch" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PreferredBank" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ResponsibleBranch" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ResponsibleBank" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ResidenceCountry" type="tns:ResidenceCountry"/>
+			
+<element maxOccurs="1" minOccurs="0" name="TaxResidenceCountry" type="tns:TaxResidenceCountry"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastContactDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastPrivacyNoteDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ClosedDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CloseReason" type="string"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="PartyAffiliateData" type="string"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="CreditRisk" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditReviewTimeFrame" type="string"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="Correspondence" type="string"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="RelationshipMgr" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ServicesProvided" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="HouseHoldAddr" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="BankruptcyInd" type="boolean"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="BankruptcyData" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyKeys">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string"/>
+			
+<choice maxOccurs="1" minOccurs="0">
+				
+<element maxOccurs="1" minOccurs="0" name="PartyId" type="tns:N9"/>
+				
+<element maxOccurs="1" minOccurs="0" name="LoginIdent" type="tns:LoginIdent"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyPref">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="Language" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CommunicationMethod" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="SolicitCommunicationMeth" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CurCode" type="tns:CurCode"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyRec">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string"/>
+			
+<element maxOccurs="1" minOccurs="1" name="PartyId" type="string"/>
+			
+<element maxOccurs="1" minOccurs="1" name="PartyInfo" type="tns:PartyInfo"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyEnvr" type="tns:PartyEnvr"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyAuth" type="tns:PartyAuth"/>
+			
+<element maxOccurs="1" minOccurs="1" name="PartyStatus" type="tns:PartyStatus"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyRef">
+		
+<sequence>
+			
+<choice>
+				
+<element maxOccurs="1" minOccurs="1" name="PartyKeys" type="tns:PartyKeys"/>
+				
+<element maxOccurs="1" minOccurs="1" name="PartyRec" type="tns:PartyRec"/>
+				
+<element maxOccurs="1" minOccurs="1" name="PartyInfo" type="tns:PartyInfo"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+<complexType name="PartyStatus">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="PartyStatusCode" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusDesc" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="EffDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ApprovalIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusModBy" type="string"/>
+		</sequence>
+	</complexType></schema>

@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.bod.com/IFX" elementFormDefault="qualified" targetNamespace="http://www.bod.com/IFX">
+
+	
+<include schemaLocation="WSParty.xsd3.xsd"/>
+	
+<include schemaLocation="WSParty.xsd4.xsd"/>
+
+
+	
+<complexType name="LoanDetailAcctInqRs">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="Status" type="tns:Status"/>
+			
+<element name="RqUID" type="tns:A36"/>
+			
+<element maxOccurs="1" minOccurs="0" name="AcctId" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="AcctInfo" type="tns:AcctInfo"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="CreditRec">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="tns:SvcIdent"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditId" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditInfo" type="tns:CreditInfo"/>
+			
+<element maxOccurs="0" minOccurs="0" name="CreditEnvr" type="tns:CreditEnvr"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditStatus" type="tns:CreditStatus"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="CreditEnvr">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="CreatedDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CreateRefIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientCreateDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientBusinessDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateRqUID" type="tns:UUID">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LoginName" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyKeys" type="tns:PartyKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CardKeys" type="tns:CardKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PassbkKeys" type="tns:PassbkKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="NetworkTrnData" type="tns:NetworkTrnData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ServerTerminalSeqNum" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PointOfServiceData" type="tns:PointOfServiceData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientTerminalSeqNum" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="CreditStatus">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="CreditStatusCode" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusDesc" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="EffDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusModBy" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditHeldAmtExpDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusReason" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+		
+<complexType name="PmtEnvr">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="CreatedDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreateRefIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientCreateDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientBusinessDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateRqUID" type="tns:UUID"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LoginName" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyKeys" type="tns:PartyKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CardKeys" type="tns:CardKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PassbkKeys" type="tns:PassbkKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="NetworkTrnData" type="tns:NetworkTrnData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ServerTerminalSeqNum" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PointOfServiceData" type="tns:PointOfServiceData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientTerminalSeqNum" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="Pmtinfo">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="CurAmt" type="tns:CurAmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CPPData" type="tns:CPPData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="DebtorData" type="tns:DebtorData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtInstruction" type="tns:PmtInstruction"/>
+			
+				
+<element maxOccurs="1" minOccurs="0" name="PrcDt" type="date"/>
+				
+<element maxOccurs="1" minOccurs="0" name="ProcDt" type="date"/>
+				
+				
+<element maxOccurs="1" minOccurs="1" name="DueDt" type="date"/>
+			
+
+			
+<element maxOccurs="1" minOccurs="0" name="ExpediteInd" type="boolean"/>
+			
+<element maxOccurs="1" minOccurs="0" name="RecurPmtKeys" type="tns:RecurPmtKeys"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="PmtCreditDetail" type="tns:PmtCreditDetail">
+			</element>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="OtherAmt" type="tns:OtherAmt">
+			</element>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="OtherAmt">
+		
+<sequence>
+			
+<element name="AmtType" type="string"/>
+			
+<element name="CurAmt" type="tns:CurAmt"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="RecurPmtKeys">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="tns:SvcIdent">
+			</element>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="RecurPmtId" type="string"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="PmtCreditDetail">
+		
+<sequence>
+			
+<sequence maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="DebtorCurAmt" type="tns:DebtorCurAmt"/>
+				
+<element maxOccurs="1" minOccurs="1" name="CreditorCurAmt" type="tns:CreditorCurAmt">
+				</element>
+			</sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="UltimateDebtorData" type="tns:UltimateDebtorData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="1" name="CreditorData" type="tns:CreditorData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="UltimateCreditorData" type="tns:UltimateCreditorData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ToAcctKeys" type="tns:ToAcctKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="RemitRef" type="tns:RemitRef"/>
+			
+<element maxOccurs="1" minOccurs="0" name="Category" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ForExDealKeys" type="tns:ForExDealKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtRefIdent" type="string"/>
+		</sequence>
+	</complexType>
+
+
+<complexType name="RemitRef">
+		
+<sequence>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="RemitKeys" type="tns:RemitKeys"/>
+				
+<element maxOccurs="1" minOccurs="1" name="RemitRec" type="tns:RemitRec"/>
+				
+<element maxOccurs="1" minOccurs="1" name="RemitInfo" type="tns:RemitInfo"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+	
+		
+<complexType name="RemitKeys">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string"/>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="RemitId" type="string"/>
+			</choice>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="RemitRec">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="1" name="RemitId" type="string"/>
+			
+<element maxOccurs="1" minOccurs="1" name="RemitInfo" type="tns:RemitInfo"/>
+			
+<element maxOccurs="1" minOccurs="0" name="RemitEnvr" type="tns:RemitEnvr"/>
+			
+<element maxOccurs="1" minOccurs="1" name="RemitStatus" type="tns:RemitStatus"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="RemitInfo">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="RemitRefIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtRefIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="RemitDeliveryRespParty" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="DeliveryInstruction" type="tns:DeliveryInstruction">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtInstruction" type="tns:PmtInstruction">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ChkData" type="tns:ChkData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ChkImageURL" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CustPayeeRef" type="tns:CustPayeeRef">
+			</element>
+			
+<element maxOccurs="unbounded" minOccurs="1" name="RemitDetail" type="tns:RemitDetail"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtRef" type="tns:PmtRef">
+			</element>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="RefData" type="tns:RefData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CurAmt" type="tns:CurAmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtRemitRefIdent" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtLegalRpt" type="tns:PmtLegalRpt"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="PmtRef">
+		
+<choice>
+			
+<element maxOccurs="1" minOccurs="1" name="PmtKeys" type="tns:PmtKeys"/>
+			
+<element maxOccurs="1" minOccurs="1" name="PmtRec" type="tns:PmtRec"/>
+			
+<element maxOccurs="1" minOccurs="1" name="PmtInfo" type="tns:Pmtinfo"/>
+		</choice>
+	</complexType>
+	
+	
+<complexType name="RemitEnvr">
+		
+<sequence>
+			
+<element name="CreatedDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CreateRefIdent" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientCreateDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientBusinessDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateRqUID" type="tns:UUID"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LoginName" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyKeys" type="tns:PartyKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CardKeys" type="tns:CardKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PassbkKeys" type="tns:PassbkKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="NetworkTrnData" type="tns:NetworkTrnData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ServerTerminalSeqNum" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PointOfServiceData" type="tns:PointOfServiceData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientTerminalSeqNum" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="RemitStatus">
+		
+<sequence>
+			
+<element name="RemitStatusCode" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusDesc" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="EffDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusModBy" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="Memo" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+	
+<complexType name="UltimateDebtorData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="PartyData" type="tns:PartyData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="DebtorAcctNumWithCreditor" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="DebtorCurAmt">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="Amt" type="decimal"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CurCode" type="tns:CurCode"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="CreditorCurAmt">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="Amt" type="decimal">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CurCode" type="tns:CurCode"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="CreditorData">
+		
+<sequence>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="PartyData" type="tns:PartyData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditorAcctNumWithDebtor" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="UltimateCreditorData">
+		
+<sequence>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="PartyData" type="tns:PartyData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditorAcctNumWithDebtor" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="DebtorData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="PartyData" type="tns:PartyData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="DebtorAcctNumWithCreditor" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="PmtInstruction">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtMethod" type="string"/>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="FromAcctRef" type="tns:FromAcctRef"/>
+				
+<element maxOccurs="1" minOccurs="1" name="SettlementIdent" type="string"/>
+			</choice>
+			
+<element maxOccurs="1" minOccurs="0" name="Memo" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CountryCode" type="tns:CountryCode"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtFormat" type="string"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="RefData" type="tns:RefData"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="IntermediaryAcct" type="tns:IntermediaryAcct"/>
+			
+<element maxOccurs="1" minOccurs="0" name="FeeChargeAlloc" type="tns:FeeChargeAlloc"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="IntermediaryAcct">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="SeqNum" type="long"/>
+			
+<element maxOccurs="1" minOccurs="1" name="AcctKeys" type="tns:AcctKeys"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="CPPData">
+		
+<sequence>
+			
+<element name="PartyData" type="tns:PartyData"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="FeeChargeAlloc">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="ChargeRegulation" type="string"/>
+			
+<element maxOccurs="1" minOccurs="1" name="Fee" type="tns:Fee"/>
+			
+<element maxOccurs="1" minOccurs="0" name="AcctKeys" type="tns:AcctKeys"/>
+		</sequence>
+	</complexType>
+	
+	
+	
+<complexType name="PmtLegalRpt">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="OrgPartyInfo" type="tns:OrgPartyInfo"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OrgIdent" type="tns:OrgIdent"/>
+			
+<element maxOccurs="1" minOccurs="1" name="PayeeCountry" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CurAmt" type="tns:CurAmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PrcDt" type="date"/>
+			
+<element maxOccurs="unbounded" minOccurs="1" name="PmtLegalRptData" type="tns:PmtLegalRptData"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="PmtLegalRptData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="LegalRptCode" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="SupplRptCode" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="Desc" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="Memo" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="SupplyingCountry" type="tns:SupplyingCountry">
+			</element>
+			
+<element maxOccurs="1" minOccurs="1" name="CurAmt" type="tns:CurAmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ImportDt" type="date"/>
+		</sequence>
+	</complexType>
+	
+	
+	
+<complexType name="SupplyingCountry">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="CountryCodeSource" type="string"/>
+			
+<element name="CountryCodeValue" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="ToAcctKeys">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string">
+			</element>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="AcctId" type="string"/>
+				
+<choice maxOccurs="1" minOccurs="0">
+					
+<element maxOccurs="1" minOccurs="1" name="BBAN" type="string"/>
+					
+<element maxOccurs="1" minOccurs="1" name="IBAN" type="string"/>
+					
+<element maxOccurs="1" minOccurs="1" name="UPIC" type="string"/>
+					
+<element maxOccurs="1" minOccurs="1" name="CLABE" type="string"/>
+					
+<element maxOccurs="1" minOccurs="1" name="CardMagData" type="tns:CardMagData">
+					</element>
+					
+<element maxOccurs="1" minOccurs="1" name="CardKeys" type="tns:CardKeys"/>
+					
+<element maxOccurs="1" minOccurs="1" name="CardChipData" type="tns:CardChipData">
+					</element>
+					
+<element maxOccurs="1" minOccurs="1" name="AcctIdent" type="tns:AcctIdent"/>
+				</choice>
+				
+<element maxOccurs="1" minOccurs="0" name="AcctType" type="tns:AcctType">
+				</element>
+				
+<element maxOccurs="1" minOccurs="0" name="CurCode" type="tns:CurCode">
+				</element>
+				
+<element maxOccurs="1" minOccurs="0" name="FIIdentType" type="string">
+				</element>
+				
+<element maxOccurs="1" minOccurs="0" name="FIIdent" type="string">
+				</element>
+				
+<element maxOccurs="1" minOccurs="0" name="BranchIdent" type="string"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="ForExDealKeys">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string"/>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="ForExDealId" type="string"/>
+				
+<element maxOccurs="1" minOccurs="1" name="ForExDealIdent" type="string"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="ChkData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="ChkNum" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OrigDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditorData" type="tns:CreditorData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="Memo" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="CustPayeeRef">
+		
+<sequence>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="CustPayeeKeys" type="tns:CustPayeeKeys">
+				</element>
+				
+<element maxOccurs="1" minOccurs="1" name="CustPayeeRec" type="tns:CustPayeeRec"/>
+				
+<element maxOccurs="1" minOccurs="1" name="CustPayeeInfo" type="tns:CustPayeeInfo"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="CustPayeeKeys">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string">
+			</element>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="CustPayeeId" type="string"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="CustPayeeRec">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="1" name="CustPayeeId" type="string"/>
+			
+<element maxOccurs="1" minOccurs="1" name="CustPayeeInfo" type="tns:CustPayeeInfo"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CustPayeeEnvr" type="tns:CustPayeeEnvr"/>
+			
+<element maxOccurs="1" minOccurs="1" name="CustPayeeStatus" type="tns:CustPayeeStatus"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="CustPayeeEnvr">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="CreatedDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreateRefIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientCreateDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientBusinessDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateRqUID" type="tns:UUID"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LoginName" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyKeys" type="tns:PartyKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CardKeys" type="tns:CardKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PassbkKeys" type="tns:PassbkKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="NetworkTrnData" type="tns:NetworkTrnData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ServerTerminalSeqNum" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PointOfServiceData" type="tns:PointOfServiceData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientTerminalSeqNum" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="CustPayeeStatus">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="CustPayeeStatusCode" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusDesc" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="EffDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ApprovalIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusModBy" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="RemitDetail">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="UltimateCreditorData" type="tns:UltimateCreditorData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="UltimateDebtorData" type="tns:UltimateDebtorData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CurAmt" type="tns:CurAmt">
+			</element>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="PmtSummAmt" type="tns:PmtSummAmt"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="RefData" type="tns:RefData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="BillRefText" type="string">
+			</element>
+			
+<choice>
+				
+<element maxOccurs="1" minOccurs="0" name="BillRef" type="tns:BillRef">
+				</element>
+				
+<element maxOccurs="unbounded" minOccurs="0" name="InvoiceData" type="tns:InvoiceData"/>
+			</choice>
+			
+<element maxOccurs="1" minOccurs="0" name="Memo" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="BillRef">
+		
+<choice maxOccurs="1" minOccurs="1">
+			
+<element maxOccurs="1" minOccurs="1" name="BillKeys" type="tns:BillKeys"/>
+			
+<element maxOccurs="1" minOccurs="1" name="BillRec" type="tns:BillRec"/>
+			
+<element maxOccurs="1" minOccurs="1" name="BillInfo" type="tns:Billinfo"/>
+		</choice>
+	</complexType>
+	
+<complexType name="BillKeys">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="tns:SvcIdent"/>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="BillId" type="string"/>
+			</choice>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="BillRec">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="tns:SvcIdent">
+			</element>
+			
+<element maxOccurs="1" minOccurs="1" name="BillId" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="1" name="BillInfo" type="tns:Billinfo">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="BillEnvr" type="tns:BillEnvr">
+			</element>
+			
+<element name="BillStatus" type="tns:BillStatus"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="BillEnvr">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="CreatedDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CreateRefIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientCreateDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientBusinessDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LastUpdateRqUID" type="tns:UUID">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="LoginName" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyKeys" type="tns:PartyKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CardKeys" type="tns:CardKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PassbkKeys" type="tns:PassbkKeys">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="NetworkTrnData" type="tns:NetworkTrnData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ServerTerminalSeqNum" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PointOfServiceData" type="tns:PointOfServiceData">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientTerminalSeqNum" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="BillStatus">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="BillStatusCode" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusDesc" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="EffDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusModBy" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="Memo" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="PmtSummAmt">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="BillSummAmtIdent" type="string"/>
+			
+<element maxOccurs="1" minOccurs="1" name="CurAmt" type="tns:CurAmt"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="EquivCurAmt" type="tns:EquivCurAmt"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="EquivCurAmt">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="EquivCurAmtType" type="string"/>
+			
+<sequence maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="CurAmt" type="tns:CurAmt"/>
+				
+<element maxOccurs="1" minOccurs="1" name="ExchangeRate" type="tns:ExchangeRate"/>
+			</sequence>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="PmtRec">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtId" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtInfo" type="tns:Pmtinfo"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtEnvr" type="tns:PmtEnvr">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtStatus" type="tns:PmtStatus"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="PmtStatus">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="PmtStatusCode" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusDesc" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="EffDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ApprovalIdent" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="StatusModBy" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="OrgPartyInfo">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyPref" type="tns:PartyPref"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="FinancialData" type="tns:FinancialData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="EstablishedDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ServiceLevel" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OriginatingBranch" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OriginatingBank" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PreferredBranch" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PreferredBank" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ResponsibleBranch" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ResponsibleBank" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ResidenceCountry" type="tns:ResidenceCountry"/>
+			
+<element maxOccurs="1" minOccurs="0" name="TaxResidenceCountry" type="tns:TaxResidenceCountry"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastContactDt" type="dateTime"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LastPrivacyNoteDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ClosedDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CloseReason" type="string"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="PartyAffiliateData" type="tns:PartyAffiliateData"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="CreditRisk" type="tns:CreditRisk"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditReviewTimeFrame" type="tns:CreditReviewTimeFrame"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="Correspondence" type="tns:Correspondence"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="RelationshipMgr" type="tns:RelationshipMgr"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ServicesProvided" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="HouseHoldAddr" type="tns:HouseHoldAddr"/>
+			
+<element maxOccurs="1" minOccurs="0" name="BankruptcyInd" type="boolean"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="BankruptcyData" type="tns:BankruptcyData"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="OrgData" type="tns:OrgData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="TaxExempt" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LegalForm" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OrgEstablishDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="NumEmployees" type="long"/>
+			
+<element maxOccurs="1" minOccurs="0" name="FiscalYearEnd" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="FinancialReportsURL" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="CreditReviewTimeFrame">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="StartDt" type="dateTime">
+			</element>
+			
+<choice maxOccurs="1" minOccurs="0">
+				
+<element maxOccurs="1" minOccurs="1" name="EndDt" type="dateTime"/>
+				
+<element maxOccurs="1" minOccurs="1" name="Duration" type="tns:Duration"/>
+			</choice>
+			
+<element maxOccurs="1" minOccurs="0" name="AllDayEvent" type="boolean">
+			</element>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="RecurRule" type="tns:RecurRule"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="RecurException" type="tns:RecurException"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="Correspondence">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="CorrespondenceIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="Desc" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="Version" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CorrespondenceType" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="DeliveryMethod" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="DeliveryDt" type="date">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ReceiptDt" type="date">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="CampaignIdent" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="FormImg" type="tns:FormImg">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="FormImgLoc" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="BatchNum" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="FileRecordNum" type="string">
+			</element>
+			
+<element name="QuestionAnswer" type="tns:QuestionAnswer"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="QuestionAnswer">
+		
+<sequence>
+			
+<choice>
+				
+<element name="QuestionIdent" type="string"/>
+				
+<element name="Question" type="string"/>
+			</choice>
+			
+<element maxOccurs="1" minOccurs="0" name="Selection" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="Answer" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="HouseHoldAddr">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="HouseholdIdent" type="string"/>
+			
+<element maxOccurs="1" minOccurs="1" name="AddressIdent" type="string"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="BankruptcyData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="EffDt" type="dateTime">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="BankruptcyType" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="BankruptcyStat" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="OrgData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="Contact" type="tns:Contact">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="IssuedIdent" type="tns:IssuedIdent">
+			</element>
+			
+<element maxOccurs="1" minOccurs="1" name="OrgName" type="tns:OrgName"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OrgCategory" type="tns:OrgCategory"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="OrgCategory">
+		
+<sequence>
+			
+<element name="OrgCategoryCode" type="tns:OrgCategoryCode">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="Desc" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="OrgCategoryCode">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="MCC" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="NAICS" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="SIC" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OrgCatIdent" type="tns:OrgCatIdent"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="OrgCatIdent">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="OrgCatIdentSource" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="OrgCatIdentValue" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="OrgIdent">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="RegistrationAuthority" type="string"/>
+			
+<element maxOccurs="1" minOccurs="1" name="RegistrationNumber" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="CreditRisk">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="RiskCategory" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="InternalScore" type="long"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ScoreGeneratedDt" type="date"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="CreditBureauSummary" type="tns:CreditBureauSummary"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="CreditBureauSummary">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditBureau" type="string">
+			</element>
+			
+<element name="BureauScore" type="long"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ReportRequestDt" type="date">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="ScoreModel" type="string">
+			</element>
+			
+<element maxOccurs="1" minOccurs="0" name="UpDt" type="tns:timestamp"/>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="FormImg">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="ContentType" type="string">
+			</element>
+			
+<element name="BinLength" type="long"/>
+			
+<element name="BinData" type="string"/>
+		</sequence>
+	</complexType>
+</schema>

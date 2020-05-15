@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.bod.com/IFX" elementFormDefault="qualified" targetNamespace="http://www.bod.com/IFX">
+	
+	
+<include schemaLocation="WSParty.xsd3.xsd"/>
+
+	
+<complexType name="CreditAcctData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="OriginationDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="Freq" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="TotalPmtCount" type="long"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PurposeDesc" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CollateralDesc" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="RegPmt" type="tns:RegPmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="DueDt" type="date"/>
+			
+<element maxOccurs="1" minOccurs="0" name="NextPmt" type="tns:NextPmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PrepayPenalty" type="tns:PrepayPenalty"/>
+			
+<element maxOccurs="1" minOccurs="0" name="LOCLoanData" type="tns:LOCLoanData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="WriteOffReason" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="WriteOffRespParty" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="CreditInfo">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditType" type="string"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="CompositeCurAmt" type="tns:CompositeCurAmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="AcctRef" type="tns:AcctRef"/>
+			
+<element maxOccurs="1" minOccurs="0" name="AthKeys" type="tns:AthKeys"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditId" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ClientChgCode" type="string"/>
+			
+<element maxOccurs="unbounded" minOccurs="0" name="CreditMediaItem" type="tns:CreditMediaItem"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="CreditKeys">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="SvcIdent" type="string"/>
+			
+<choice>
+				
+<element maxOccurs="1" minOccurs="0" name="CreditId" type="string"/>
+			</choice>
+		</sequence>
+	</complexType>
+	
+<complexType name="CreditMediaCashData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="1" name="CashAmt" type="tns:CashAmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CashValidity" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="CashQuality" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="CreditMediaChkData">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="ChkEnteredAmt" type="tns:ChkEnteredAmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ChkCourtesyAmt" type="tns:ChkCourtesyAmt"/>
+			
+<element maxOccurs="1" minOccurs="0" name="MicrReadIntegrity" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="MicrUnformatted" type="string"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ChkImgData" type="tns:ChkImgData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ChkDetail" type="tns:ChkDetail"/>
+			
+<element maxOccurs="1" minOccurs="0" name="PartyData" type="tns:PartyData"/>
+			
+<element maxOccurs="1" minOccurs="0" name="ChkAcceptId" type="string"/>
+		</sequence>
+	</complexType>
+	
+<complexType name="CreditMediaItem">
+		
+<sequence>
+			
+<element maxOccurs="1" minOccurs="0" name="CreditMediaItemIdent" type="string"/>
+			
+<choice maxOccurs="1" minOccurs="1">
+				
+<element maxOccurs="1" minOccurs="1" name="CreditMediaCashData" type="tns:CreditMediaCashData"/>
+				
+<element maxOccurs="1" minOccurs="1" name="CreditMediaChkData" type="tns:CreditMediaChkData"/>
+			</choice>
+		</sequence>
+	</complexType>
+</schema>

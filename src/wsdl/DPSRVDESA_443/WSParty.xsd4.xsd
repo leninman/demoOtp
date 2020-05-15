@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.bod.com/IFX" elementFormDefault="qualified" targetNamespace="http://www.bod.com/IFX">
+
+	
+<simpleType name="A1">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="1"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A2">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="2"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A3">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="3"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A4">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="4"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A5">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="5"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A6">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="6"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A6N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="6"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A7">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="7"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A8">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="8"/>
+		</restriction>
+		</simpleType>
+	
+<simpleType name="A8N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="8"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A9">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="9"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A10">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="10"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A100">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="100"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A100N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="100"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A11">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="12"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A12">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="12"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A16">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="16"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A28">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="28"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A20">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="20"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A30N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="30"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A30">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="30"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A36">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="36"/>
+		</restriction>
+	</simpleType>
+	
+	
+<simpleType name="A7N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="7"/>
+		</restriction>
+	</simpleType>
+	 
+<simpleType name="A40">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="40"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A50">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="50"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A60">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="60"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A1N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="1"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A2N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="2"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A4N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="4"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A5N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="5"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A10N">
+	 	
+<restriction base="string">
+	 		
+<minLength value="0"/>
+	 		
+<maxLength value="10"/>
+	 	</restriction>
+	 </simpleType>
+	 
+<simpleType name="A1X">
+	 	
+<restriction base="string">
+	 		
+<minLength value="0"/>
+	 		
+<maxLength value="1"/>
+	 		
+<enumeration value="X"/>
+	 		
+<enumeration value=""/>
+	 	</restriction>
+	 </simpleType>
+	 
+<simpleType name="A12N">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="12"/>
+		</restriction>
+	</simpleType>
+	 
+<simpleType name="A16N">
+	 	
+<restriction base="string">
+	 		
+<pattern value="[0-9A-Za-z].{0,15}"/>
+	 		
+<minLength value="1"/>
+	 	</restriction>
+	 </simpleType>
+	 
+	 
+<simpleType name="A15P">
+	 	
+<restriction base="string">
+	 		
+<pattern value="\d{1,13}\.\d{1,2}"/>
+	 		
+	 		
+<minLength value="1"/>
+	 	</restriction>
+	 </simpleType>
+	
+	 
+<simpleType name="D15">
+		
+<restriction base="decimal">
+			
+<pattern value="\-{0,1}\d{1,13}\.\d{1,2}"/>
+		</restriction>
+		
+	</simpleType>
+	
+<simpleType name="D15E">
+		
+<restriction base="decimal">
+			
+<pattern value="\-{0,1}\d{1,13}(\.\d{1,2})?"/>
+		</restriction>
+		
+	</simpleType>
+	
+<simpleType name="D14P">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,12}(\.\d{1,2})?"/>
+		</restriction>
+	</simpleType>
+	
+	
+<simpleType name="D15P">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,13}(\.\d{1,2})?"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D7P">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,5}(\.\d{1,2})?"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D23">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,19}\.\d{1,4}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D19P">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,17}(\.\d{1,2})?"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A23P">
+		
+<restriction base="string">
+	 		
+<pattern value="\d{1,19}\.\d{1,4}"/>
+	 	</restriction>
+	</simpleType>
+	
+<simpleType name="N1">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N2">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,2}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N3">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,3}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N4">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,4}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N5">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,5}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N6">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,6}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N7">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,7}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N8">
+		
+<restriction base="string">
+			
+<pattern value="[1-9]\d{0,7}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N9">
+		
+<restriction base="string">
+			
+<pattern value="[1-9]\d{0,8}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N10N">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,10}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N10">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,10}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N11">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,11}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N12">
+		
+<restriction base="string">
+			
+<pattern value="[1-9]\d{0,11}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N12N">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]\d{0,11}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N13">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,13}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N14">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,14}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N15">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,15}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N16">
+		
+<restriction base="integer">
+			
+<pattern value="[1-9]\d{0,15}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N16Z">
+		
+<restriction base="integer">
+			
+<pattern value="[0-9]\d{0,15}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N17">
+		
+<restriction base="integer">
+			
+<pattern value="[1-9]\d{0,16}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N19">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,19}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N20">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,20}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N20D">
+		
+<restriction base="decimal">
+			
+<pattern value="[0-9]{1,20}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N23">
+        
+<restriction base="string">
+            
+<pattern value="[0-9]{1,23}"/>
+        </restriction>
+    </simpleType>
+    
+<simpleType name="N28">
+        
+<restriction base="string">
+            
+<pattern value="[0-9]{1,28}"/>
+        </restriction>
+    </simpleType>
+    
+	
+<simpleType name="N400">
+		
+<restriction base="integer">
+			
+<pattern value="[1-3]\d{0,2}|400"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N6D3">
+		
+<restriction base="decimal">
+			
+<pattern value="\-{0,1}\d{1,6}\.\d{1,3}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N9N">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,9}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N1N">
+		
+<restriction base="string">
+			
+<pattern value="[0-1]{1}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N12Z">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]\d{0,11}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N9Z">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]\d{0,8}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N4D">
+		
+<restriction base="decimal">
+			
+<pattern value="[1-9]\d{0,3}"/>
+		</restriction>
+	</simpleType>
+	
+
+	
+<simpleType name="D3">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,3}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D4">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,4}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D5">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,5}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D6">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,6}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D8">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,8}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D14">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,14}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="MD15">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,15}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D5D2">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,3}(\.\d{1,2})?"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D7D2">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,5}(\.\d{1,2})?"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="D16D2">
+		
+<restriction base="decimal">
+			
+<pattern value="\d{1,14}(\.\d{1,2})?"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="N25">
+		
+<restriction base="string">
+			
+<pattern value="[0-9]{1,25}"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="Tr1">
+		
+<restriction base="string">
+			
+<pattern value="01"/>
+			
+<minLength value="1"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="Tr2">
+		
+<restriction base="string">
+			
+<pattern value="02"/>
+			
+<minLength value="1"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="Tr3">
+		
+<restriction base="string">
+			
+<pattern value="03"/>
+			
+<minLength value="1"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="Tr4">
+		
+<restriction base="string">
+			
+<pattern value="04"/>
+			
+<minLength value="1"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="Tr5">
+		
+<restriction base="string">
+			
+<pattern value="05"/>
+			
+<minLength value="1"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="Mod">
+		
+<restriction base="string">
+			
+<pattern value="SPMTRA"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="Ben">
+		
+<restriction base="string">
+			
+<enumeration value="ADD"/>
+			
+<enumeration value="MOD"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="INQ">
+		
+<restriction base="string">
+			
+<pattern value="INQ"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A15">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="15"/>
+		</restriction>
+	</simpleType>
+	
+	
+	
+<simpleType name="A128">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="128"/>
+		</restriction>
+	</simpleType>
+	
+	
+<simpleType name="A25">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="25"/>
+		</restriction>
+	</simpleType>
+	
+	
+<simpleType name="A64">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="64"/>
+		</restriction>
+	</simpleType>
+	
+	
+<simpleType name="A304">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="304"/>
+		</restriction>
+	</simpleType>
+	
+	
+	
+	
+<simpleType name="A32">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="32"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A35">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="35"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A39">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="39"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A175">
+		
+<restriction base="string">
+			
+<minLength value="1"/> 
+			
+<maxLength value="175"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A500">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="500"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A1ToC">
+	 	
+<restriction base="string">
+	 		
+<minLength value="0"/>
+	 		
+<maxLength value="1"/>
+	 		
+<enumeration value="T"/>
+	 		
+<enumeration value="C"/>
+	 	</restriction>
+	 </simpleType>
+	 
+<simpleType name="SoN">
+	 	
+<restriction base="string">
+	 		
+<enumeration value="S"/>
+	 		
+<enumeration value="N"/>
+	 	</restriction>
+	 </simpleType>
+	 
+<simpleType name="A63Z">
+		
+<restriction base="string">
+			
+<minLength value="0"/>
+			
+<maxLength value="60"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A1_123">
+	 	
+<restriction base="string">
+	 		
+<minLength value="0"/>
+	 		
+<maxLength value="1"/>
+	 		
+<enumeration value="1"/>
+	 		
+<enumeration value="2"/>
+	 		
+<enumeration value="3"/>
+	 	</restriction>
+	 </simpleType>
+	 
+<simpleType name="A1_2">
+	 	
+<restriction base="string">
+	 		
+<minLength value="0"/>
+	 		
+<maxLength value="1"/>
+	 		
+<enumeration value="2"/>
+	 	</restriction>
+	 </simpleType>
+	 
+<simpleType name="A1015">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="1015"/>
+		</restriction>
+	</simpleType>
+	
+<simpleType name="A45">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="45"/>
+		</restriction>
+	</simpleType>
+		
+<simpleType name="A14">
+		
+<restriction base="string">
+			
+<minLength value="1"/>
+			
+<maxLength value="14"/>
+		</restriction>
+	</simpleType>
+	
+
+	
+	 
+<simpleType name="A1J">
+	 	
+<restriction base="string">
+	 		
+<minLength value="0"/>
+	 		
+<maxLength value="1"/>
+	 		
+<enumeration value="J"/>
+	 		
+<enumeration value=""/>
+	 	</restriction>
+	 </simpleType>	
+	 
+	
+<simpleType name="A1R">
+	 	
+<restriction base="string">
+	 		
+<minLength value="0"/>
+	 		
+<maxLength value="1"/>
+	 		
+<enumeration value="R"/>
+	 		
+<enumeration value=""/>
+	 	</restriction>
+	 </simpleType>		 
+	 
+	 
+<simpleType name="A1NN">
+	 	
+<restriction base="string">
+	 		
+<minLength value="0"/>
+	 		
+<maxLength value="1"/>
+	 		
+<enumeration value="N"/>
+	 		
+<enumeration value=""/>
+	 	</restriction>
+	 </simpleType>		
+</schema>

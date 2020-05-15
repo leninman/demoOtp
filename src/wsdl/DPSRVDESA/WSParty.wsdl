@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:ns0="http://www.example.org/dispatcher/" targetNamespace="http://www.example.org/dispatcher/">
+<wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema>
+<xsd:import schemaLocation="WSParty.xsd10.xsd" namespace="http://www.bod.com/IFX"/>
+<xsd:import schemaLocation="WSParty.xsd2.xsd" namespace="http://www.bod.com/IFX"/>
+<xsd:import schemaLocation="WSParty.xsd3.xsd" namespace="http://www.bod.com/IFX"/>
+<xsd:import schemaLocation="WSParty.xsd4.xsd" namespace="http://www.bod.com/IFX"/>
+<xsd:import schemaLocation="WSParty.xsd5.xsd" namespace="http://www.bod.com/IFX"/>
+<xsd:import schemaLocation="WSParty.xsd6.xsd" namespace="http://www.bod.com/IFX"/>
+<xsd:import schemaLocation="WSParty.xsd7.xsd" namespace="http://www.bod.com/IFX"/>
+<xsd:import schemaLocation="WSParty.xsd8.xsd" namespace="http://www.bod.com/IFX"/>
+<xsd:import schemaLocation="WSParty.xsd9.xsd" namespace="http://www.bod.com/IFX"/></xsd:schema></wsdl:types>
+<wsdl:message name="AcctSignerInqRq">
+<wsdl:part name="parameters" element="xsns:AcctSignerInqRq" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="AcctSignerInqRs">
+<wsdl:part name="parameters" element="xsns:AcctSignerInqRs" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="BankRefRq">
+<wsdl:part name="parameters" element="xsns:BankRefRq" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="BankRefRs">
+<wsdl:part name="parameters" element="xsns:BankRefRs" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="ConPosInqRq">
+<wsdl:part name="parameters" element="xsns:ConPosInqRq" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="ConPosInqRs">
+<wsdl:part name="parameters" element="xsns:ConPosInqRs" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="PartyInqCodeRq">
+<wsdl:part name="parameters" element="xsns:PartyInqCodeRq" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="PartyInqCodeRs">
+<wsdl:part name="parameters" element="xsns:PartyInqCodeRs" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="PartyInqIssuedRq">
+<wsdl:part name="parameters" element="xsns:PartyInqIssuedRq" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="PartyInqIssuedRs">
+<wsdl:part name="parameters" element="xsns:PartyInqIssuedRs" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="SignersCustInqRq">
+<wsdl:part name="parameters" element="xsns:SignersCustInqRq" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="SignersCustInqRs">
+<wsdl:part name="parameters" element="xsns:SignersCustInqRs" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="UpdateNumberTlfOEmailRq">
+<wsdl:part name="parameters" element="xsns:UpdateNumberTlfOEmailRq" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="UpdateNumberTlfOEmailRs">
+<wsdl:part name="parameters" element="xsns:UpdateNumberTlfOEmailRs" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="ValDocRq">
+<wsdl:part name="parameters" element="xsns:ValDocRq" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:message name="ValDocRs">
+<wsdl:part name="parameters" element="xsns:ValDocRs" xmlns:xsns="http://www.bod.com/IFX"/></wsdl:message>
+<wsdl:portType name="port">
+<wsdl:operation name="AcctSignerInq">
+<wsdl:input name="AcctSignerInqRequest" message="ns0:AcctSignerInqRq"/>
+<wsdl:output name="AcctSignerInqResponse" message="ns0:AcctSignerInqRs"/></wsdl:operation>
+<wsdl:operation name="BankRef">
+<wsdl:input name="BankRefRequest" message="ns0:BankRefRq"/>
+<wsdl:output name="BankRefResponse" message="ns0:BankRefRs"/></wsdl:operation>
+<wsdl:operation name="ConPosInq">
+<wsdl:input name="ConPosInqRequest" message="ns0:ConPosInqRq"/>
+<wsdl:output name="ConPosInqResponse" message="ns0:ConPosInqRs"/></wsdl:operation>
+<wsdl:operation name="PartyInqCode">
+<wsdl:input name="PartyInqCodeRequest" message="ns0:PartyInqCodeRq"/>
+<wsdl:output name="PartyInqCodeResponse" message="ns0:PartyInqCodeRs"/></wsdl:operation>
+<wsdl:operation name="PartyInqIssued">
+<wsdl:input name="PartyInqIssuedRequest" message="ns0:PartyInqIssuedRq"/>
+<wsdl:output name="PartyInqIssuedResponse" message="ns0:PartyInqIssuedRs"/></wsdl:operation>
+<wsdl:operation name="SignersCustInq">
+<wsdl:input name="SignersCustInqRequest" message="ns0:SignersCustInqRq"/>
+<wsdl:output name="SignersCustInqResponse" message="ns0:SignersCustInqRs"/></wsdl:operation>
+<wsdl:operation name="UpdateNumberTlfOEmail">
+<wsdl:input name="UpdateNumberTlfOEmailRequest" message="ns0:UpdateNumberTlfOEmailRq"/>
+<wsdl:output name="UpdateNumberTlfOEmailResponse" message="ns0:UpdateNumberTlfOEmailRs"/></wsdl:operation>
+<wsdl:operation name="ValDoc">
+<wsdl:input name="ValDocRequest" message="ns0:ValDocRq"/>
+<wsdl:output name="ValDocResponse" message="ns0:ValDocRs"/></wsdl:operation></wsdl:portType>
+<wsdl:binding name="dispatcherSOAP" type="ns0:port">
+<soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<wsdl:operation name="AcctSignerInq">
+<soap11:operation soapAction="http://www.bod.com.ve/AcctSignerInq" style="document"/>
+<wsdl:input name="AcctSignerInqRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="AcctSignerInqResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="BankRef">
+<soap11:operation soapAction="http://www.bod.com.ve/AcctSignerInq" style="document"/>
+<wsdl:input name="BankRefRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="BankRefResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="ConPosInq">
+<soap11:operation soapAction="http://www.bod.com.ve/ConPosInq" style="document"/>
+<wsdl:input name="ConPosInqRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="ConPosInqResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="PartyInqCode">
+<soap11:operation soapAction="http://www.bod.com.ve/PartyInqCode" style="document"/>
+<wsdl:input name="PartyInqCodeRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="PartyInqCodeResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="PartyInqIssued">
+<soap11:operation soapAction="http://www.bod.com.ve/PartyInqIssued" style="document"/>
+<wsdl:input name="PartyInqIssuedRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="PartyInqIssuedResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="SignersCustInq">
+<soap11:operation soapAction="http://www.bod.com.ve/SignersCustInq" style="document"/>
+<wsdl:input name="SignersCustInqRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="SignersCustInqResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="UpdateNumberTlfOEmail">
+<soap11:operation soapAction="http://www.bod.com.ve/UpdateNumberTlfOEmail" style="document"/>
+<wsdl:input name="UpdateNumberTlfOEmailRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="UpdateNumberTlfOEmailResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="ValDoc">
+<soap11:operation soapAction="http://www.bod.com.ve/ValDoc" style="document"/>
+<wsdl:input name="ValDocRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="ValDocResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation></wsdl:binding>
+<wsdl:service name="WSParty">
+<wsdl:port name="port" binding="ns0:dispatcherSOAP">
+<soap11:address location="https://https://DPSRVDESA:443/WSParty"/></wsdl:port>
+<wsdl:port name="port.0" binding="ns0:dispatcherSOAP">
+<soap11:address location="http://127.0.0.1:2102/WSParty"/></wsdl:port></wsdl:service></wsdl:definitions>
